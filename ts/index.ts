@@ -1,1 +1,1 @@
-console.log('esbuild start...');
+console.log("esbuild start...");

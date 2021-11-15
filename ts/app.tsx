@@ -1,6 +1,5 @@
-import React from "react";
-import reactDOM from "react-dom";
+import React from 'react';
 
-const ele = <div>Hello, React</div>;
-
-reactDOM.render(ele, document.getElementById("root"));
+export default function App() {
+  return <>Hello Esbuild</>;
+}

@@ -1,14 +1,14 @@
 require('esbuild')
   .serve(
-    { port: 8000, servedir: "." },
+    { port: 8000, servedir: '.' },
     {
-      entryPoints: ["index.tsx"],
+      entryPoints: ['index.tsx'],
       bundle: true,
-      tsconfig: "tsconfig.json",
-      outfile: "out.js",
-      loader: {'.js': 'jsx'}
+      tsconfig: 'tsconfig.json',
+      outfile: 'out.js',
+      loader: { '.js': 'jsx' },
     }
   )
-  .then((server: {[key: string]: string}) => {
+  .then((server: { [key: string]: string }) => {
     console.log(server);
   });

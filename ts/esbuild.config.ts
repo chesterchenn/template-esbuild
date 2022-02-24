@@ -7,6 +7,7 @@ require('esbuild')
       tsconfig: 'tsconfig.json',
       outfile: 'out.js',
       loader: { '.js': 'jsx' },
+      sourcemap: true,
     }
   )
   .then((server: { [key: string]: string }) => {
